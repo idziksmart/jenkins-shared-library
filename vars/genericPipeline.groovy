@@ -11,8 +11,8 @@ def compute(body) {
     ctx.logger = new io.idziksmart.jenkinssharedlibrary.Logger(this)
     print("REGION "+env.AWS_REGION)
     print("SLACK_CHANNEL "+env.SLACK_CHANNEL)
-    print(currentBuild)
-    print(env)
+    print(currentBuild.number)
+    print(env.WORKSPACE)
     print(${env.JENKINS_HOME})
     ctx.env = env
     ctx.currentBuild = currentBuild
