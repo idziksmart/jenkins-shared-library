@@ -9,6 +9,7 @@ def compute(body) {
     ctx.logger = new io.idziksmart.jenkinssharedlibrary.Logger(this)
     ctx.env = env
     ctx.currentBuild = currentBuild
+    echo "$ctx.currentBuild"
     ctx.logger.printMessage('Starting .... ')
     ctx.logger.printMessage(ctx.currentBuild)
 }
