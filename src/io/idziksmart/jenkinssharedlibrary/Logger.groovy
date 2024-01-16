@@ -7,7 +7,7 @@ class Logger implements Serializable {
         this.pipeline = pipeline
     }
 
-    public void printMessage(String message) {
+    void printMessage(String message) {
         pipeline.println(message)
     }
 }
