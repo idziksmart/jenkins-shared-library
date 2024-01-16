@@ -7,6 +7,8 @@ def call(body) {
 def compute(body) {
     def ctx = [:]
     ctx.logger = new io.idziksmart.jenkinssharedlibrary.Logger(this)
+    print(env)
+    print(currentBuild)
     ctx.env = env
     ctx.currentBuild = currentBuild
     echo "$ctx.currentBuild"
